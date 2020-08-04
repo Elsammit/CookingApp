@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.d12eba88.chunk.css",
-    "main.js": "/static/js/main.baec0903.chunk.js",
-    "main.js.map": "/static/js/main.baec0903.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d70d6d88.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d70d6d88.js.map",
-    "static/js/2.e79d8b73.chunk.js": "/static/js/2.e79d8b73.chunk.js",
-    "static/js/2.e79d8b73.chunk.js.map": "/static/js/2.e79d8b73.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.140d2cb26e3ffb2cfeeeede60a698cf6.js": "/precache-manifest.140d2cb26e3ffb2cfeeeede60a698cf6.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.d12eba88.chunk.css.map": "/static/css/main.d12eba88.chunk.css.map",
-    "static/js/2.e79d8b73.chunk.js.LICENSE.txt": "/static/js/2.e79d8b73.chunk.js.LICENSE.txt",
-    "static/media/katsukare.jpg": "/static/media/katsukare.c046b0de.jpg",
-    "static/media/mabodoufu.jpg": "/static/media/mabodoufu.9b7b1d25.jpg",
-    "static/media/naporitan.jpg": "/static/media/naporitan.b91bf738.jpg",
-    "static/media/nikuzyaga.jpg": "/static/media/nikuzyaga.0317e081.jpg"
+    "main.css": "./static/css/main.d12eba88.chunk.css",
+    "main.js": "./static/js/main.53d9d456.chunk.js",
+    "main.js.map": "./static/js/main.53d9d456.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.f6884ac3.js",
+    "runtime-main.js.map": "./static/js/runtime-main.f6884ac3.js.map",
+    "static/js/2.e79d8b73.chunk.js": "./static/js/2.e79d8b73.chunk.js",
+    "static/js/2.e79d8b73.chunk.js.map": "./static/js/2.e79d8b73.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.3999164ef532e5d9cf0bcf76f1f7397e.js": "./precache-manifest.3999164ef532e5d9cf0bcf76f1f7397e.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.d12eba88.chunk.css.map": "./static/css/main.d12eba88.chunk.css.map",
+    "static/js/2.e79d8b73.chunk.js.LICENSE.txt": "./static/js/2.e79d8b73.chunk.js.LICENSE.txt",
+    "static/media/katsukare.jpg": "./static/media/katsukare.c046b0de.jpg",
+    "static/media/mabodoufu.jpg": "./static/media/mabodoufu.9b7b1d25.jpg",
+    "static/media/naporitan.jpg": "./static/media/naporitan.b91bf738.jpg",
+    "static/media/nikuzyaga.jpg": "./static/media/nikuzyaga.0317e081.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d70d6d88.js",
+    "static/js/runtime-main.f6884ac3.js",
     "static/js/2.e79d8b73.chunk.js",
     "static/css/main.d12eba88.chunk.css",
-    "static/js/main.baec0903.chunk.js"
+    "static/js/main.53d9d456.chunk.js"
   ]
 }
