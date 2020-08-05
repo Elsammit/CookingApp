@@ -11,7 +11,7 @@ import naporitan from './img/naporitan.jpg';
 const MenuList = ["カレー","回鍋肉","ナスのみそ炒め","ナポリタン","チャプチェ","親子丼","グラタン","肉じゃが","ピーマンの肉詰め","麻婆豆腐","冷しゃぶ","お好み焼き","餃子","ビシソワーズ","オムライス"];
 const ImgList = [katsukare, nikuzyaga, omuraisu, tonziru, mabodoufu, naporitan];
 
-export default class Todo extends Component  {
+export default class Cooking extends Component  {
     constructor (props) {
         super(props);
         this.state = {
@@ -33,13 +33,14 @@ export default class Todo extends Component  {
         });
     }
     
-    test = () => {
+    ShowMenu = () => {
         const {Menu} = this.state;
         const {Url} = this.state;
 
         const URL = Url + encodeURI(Menu);
 
         return(<div>
+            <title>Cooking App</title>
     <div className="CookResult">
         <input type="button" id="StButton"　className="StButton" value="スタート" onClick={this.ClickStart}></input><br/>
     </div>
@@ -104,7 +105,7 @@ export default class Todo extends Component  {
             <div className="title">
                 <u>料理決めルーレット</u><br/>
             </div>
-            {this.test()}
+            {this.ShowMenu()}
             </div>);
     }
   }
