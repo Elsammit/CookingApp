@@ -7,9 +7,18 @@ import omuraisu from './img/omuraisu.jpg';
 import tonziru from './img/tonziru.jpg';
 import mabodoufu from './img/mabodoufu.jpg';
 import naporitan from './img/naporitan.jpg';
+import kuzi from './img/kuzi.jpg';
+import axios  from "axios";
+import fetch from 'node-fetch' 
 
 const MenuList = ["カレー","回鍋肉","ナスのみそ炒め","ナポリタン","チャプチェ","親子丼","グラタン","肉じゃが","ピーマンの肉詰め","麻婆豆腐","冷しゃぶ","お好み焼き","餃子","ビシソワーズ","オムライス"];
 const ImgList = [katsukare, nikuzyaga, omuraisu, tonziru, mabodoufu, naporitan];
+ 
+axios.defaults.baseURL = 'http://192.168.56.101';
+axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+axios.defaults.headers.post['Access-Control-Allow-Origin'] = 'http://192.168.56.101:3000';
+axios.defaults.headers.post['Access-Control-Allow-Credentials'] = 'true';
+
 
 export default class Cooking extends Component  {
     constructor (props) {
@@ -22,6 +31,38 @@ export default class Cooking extends Component  {
         };
         this.ImgInit();
     }
+
+    async test(){
+        //const url = 'https://business.nikkei.com'
+        var response = await fetch('https://business.nikkei.com',{
+            mode:'no-cors',
+            Credentials:'omit',
+            method:"GET",
+            headers:{
+                Origin:'http://192.168.56.101:3000',
+                Type:'application/json',
+            }
+
+        }).then(
+            ( result => {
+                console.log("OK")
+                console.log(result
+                    )
+              }),
+        ).catch(function(error){
+            console.log("NG 2")
+            console.log(error)
+        })
+        return response;
+    }
+
+    async componentDidMount(){
+        var res = await this.test();
+        console.log("===================")
+        console.log(res) 
+        console.log("===================")
+    }
+    
 
     ClickStart = () => {
         var buf = Math.floor(Math.random() * (MenuList.length));
@@ -75,7 +116,6 @@ export default class Cooking extends Component  {
         }else{
             buf = 1;
         }
-        console.log("画像列数は"+Num);
         this.setState({
             Num:buf
         });
@@ -105,6 +145,7 @@ export default class Cooking extends Component  {
             <div className="title">
                 <u>料理決めルーレット</u><br/>
             </div>
+            <img src={kuzi} alt="オムライス" className="kuzi" />
             {this.ShowMenu()}
             </div>);
     }
